@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  generate_html:
+    ports:
+      - "8083:80"
+    build: .
