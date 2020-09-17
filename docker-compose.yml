@@ -4,4 +4,8 @@ services:
   generate_html:
     ports:
       - "8083:80"
-    build: .
+    build:
+      context: .
+      args:
+        GITHUB_OAUTH:
+        GITHUB_LOGIN:
